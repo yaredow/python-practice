@@ -1,0 +1,44 @@
+# Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+.env/
+
+# Django specific files
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+
+# .vscode folder
+.vscode/
+
+# Django migrations
+*/migrations/*
+
+# System-specific files
+.DS_Store
+Thumbs.db
+
+# IDE and Editor files
+.idea/
+.vscode/
+
+# Dependency directories
+node_modules/
+
+# VS Code settings folder
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+
+# MacOS files
+*.swp
