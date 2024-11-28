@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-2u^#32*v#r#1d8xzjb6a7=_ia#cw^(i@l-%8p20f%pxls&u063"
+SECRET_KEY = "django-insecure-srf3ylkib0*p0_rpa*obge!d4zku4(gdegrsqnll(t24$^o8@="
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "accounts",
-    "pages",
+    "rest_framework",
+    "books.apps.BooksConfig",
+    "api.apps.ApiConfig",
 ]
 
 MIDDLEWARE = [
@@ -118,9 +119,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = "static/"
-AUTH_USER_MODEL = "accounts.CustomUser"
-LOGIN_REDIRECT_URL = "home"
-LOGOUT_REDIRECT_URL = "home"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
